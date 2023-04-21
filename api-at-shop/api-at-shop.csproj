@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>api_at_shop</RootNamespace>
+    <UserSecretsId>9c187ed7-14d9-48da-9ff9-3533884de10c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="SendGrid" Version="9.28.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.AspNet.WebApi.Client" />
+    <None Remove="Services\" />
+    <None Remove="Model\" />
+    <None Remove="DTO\" />
+    <None Remove="DTO\Printify\" />
+    <None Remove="DTO\Printify\Data\" />
+    <None Remove="DTO\Printify\Data\Options\Values\" />
+    <None Remove="Model\Products\" />
+    <None Remove="Utils\" />
+    <None Remove="Utils\Constants\" />
+    <None Remove="Services\ProductServices\Common\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Model\Shipping\" />
+    <None Remove="DTO\Printify\Shipping\" />
+    <None Remove="Auth\" />
+    <None Remove="Model\Auth\" />
+    <None Remove="Services\AuthServices\" />
+    <None Remove="Services\AuthServices\Common\" />
+    <None Remove="Repository\Entites\" />
+    <None Remove="Services\EmailServices\" />
+    <None Remove="Model\Email\" />
+    <None Remove="Services\EmailServices\common\" />
+    <None Remove="SendGrid" />
+    <None Remove="Utils\Data\" />
+    <None Remove="api.at-classics.com\wwwroot\api-at-shop.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Model\" />
+    <Folder Include="DTO\" />
+    <Folder Include="DTO\Printify\" />
+    <Folder Include="DTO\Printify\Data\" />
+    <Folder Include="DTO\Printify\Data\Option\Values\" />
+    <Folder Include="Model\Products\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Utils\Constants\" />
+    <Folder Include="Services\ProductServices\Common\" />
+    <Folder Include="Model\Shipping\" />
+    <Folder Include="DTO\Printify\Shipping\" />
+    <Folder Include="Auth\" />
+    <Folder Include="Model\Auth\" />
+    <Folder Include="Services\AuthServices\" />
+    <Folder Include="Services\AuthServices\Common\" />
+    <Folder Include="Repository\Entites\" />
+    <Folder Include="Services\EmailServices\" />
+    <Folder Include="Model\Email\" />
+    <Folder Include="Services\EmailServices\common\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\html\" />
+    <Folder Include="Utils\Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\html\" />
+  </ItemGroup>
+</Project>
